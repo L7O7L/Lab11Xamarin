@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana11A2023.Views.Operacions">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+
+                <StackLayout WidthRequest="193" Spacing="10">
+
+                    <Label Text="Suma"></Label>
+                    <Entry Placeholder="Valor A" Text="{Binding ValorA}"></Entry>
+                    <Entry Placeholder="Valor B" Text="{Binding ValorB}"></Entry>
+                    <Button Text="Sumar" Command="{Binding Sumar}"/>
+                    <Label  FontSize="Large"
+                    Text="{Binding ResultadoSuma}"></Label>
+
+                    <Label Text="Resta"></Label>
+                    <Entry Placeholder="Valor A" Text="{Binding ValorC}"></Entry>
+                    <Entry Placeholder="Valor B" Text="{Binding ValorD}"></Entry>
+                    <Button Text="Restar" Command="{Binding Restar}"/>
+                    <Label  FontSize="Large"
+                    Text="{Binding ResultadoResta}"></Label>
+
+                </StackLayout>
+
+                <StackLayout WidthRequest="193" Spacing="10">
+
+                    <Label Text="Multiplicación"></Label>
+                    <Entry Placeholder="Valor A" Text="{Binding ValorE}"></Entry>
+                    <Entry Placeholder="Valor B" Text="{Binding ValorF}"></Entry>
+                    <Button Text="Multiplicar" Command="{Binding Multiplicar}"/>
+                    <Label  FontSize="Large"
+                    Text="{Binding ResultadoMultiplicacion}"></Label>
+
+                    <Label Text="División"></Label>
+                    <Entry Placeholder="Valor A" Text="{Binding ValorG}"></Entry>
+                    <Entry Placeholder="Valor B" Text="{Binding ValorH}"></Entry>
+                    <Button Text="Dividir" Command="{Binding Dividir}"/>
+                    <Label  FontSize="Large"
+                    Text="{Binding ResultadoDivision}"></Label>
+
+                </StackLayout>
+
+            </StackLayout>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
